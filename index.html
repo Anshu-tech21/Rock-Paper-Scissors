@@ -2,18 +2,11 @@
 <html>
     <head>
         <title>Rock-Paper-Scissors</title>
+        <link rel="stylesheet" href="style.css">
+
     </head>
     <style>
-        body{
-            background-color: black;
-        }
-        h1{
-            background-color: yellow;
-        }
-        button{
-            background-color: red;
-            color: white;
-        }
+        
     </style>
     <body>
       <h1>Rock-Paper-Scissors</h1>
@@ -69,19 +62,8 @@
 
         alert(`You Picked Rock . Computer Picked ${ComputerMove}. ${result}`);
       ">Scissors</button>
+
+      <script src="script.js"></script>
+
     </body>
-    <script>
-         let ComputerMove='';
-        function pickComputerMove(){
-             const randomNumber = Math.random();
-        
-         if(randomNumber >=0 && randomNumber < 1/3){
-           ComputerMove='Rock';
-         }else if(randomNumber >= 1/3 && randomNumber < 2/3){
-            ComputerMove='Paper';
-         }else if(randomNumber >=2/3 && randomNumber < 1){
-             ComputerMove='Scissors';
-         }
-        }
-    </script>
 </html>
