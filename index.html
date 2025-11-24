@@ -3,67 +3,28 @@
     <head>
         <title>Rock-Paper-Scissors</title>
         <link rel="stylesheet" href="style.css">
-
     </head>
-    <style>
-        
-    </style>
+
     <body>
       <h1>Rock-Paper-Scissors</h1>
       
-      <button onclick="
-        
-        pickComputerMove();
-         
-         let result = '';
-         if(ComputerMove==='Rock'){
-            result = 'Tie'
-         }else if(ComputerMove=='Paper'){
-            result='Loose';
-         }else if(ComputerMove=='Scissors'){
-            result='Win';
-         }
+      <div class="choices">
+        <img src="images/rock.png" 
+             class="move-img" 
+             onclick="playGame('rock')" 
+             alt="Rock">
 
-        alert(`You Picked Rock . Computer Picked ${ComputerMove}. ${result}`);
-         
-         
-      ">Rock</button>
-      <button onclick="
-        
-        pickComputerMove();
-         
-         console.log(ComputerMove);
-         
-         let result = '';
-         if(ComputerMove==='Rock'){
-            result = 'Win'
-         }else if(ComputerMove=='Paper'){
-            result='Tie';
-         }else if(ComputerMove=='Scissors'){
-            result='Loose';
-         }
+        <img src="images/paper.jpeg" 
+             class="move-img" 
+             onclick="playGame('paper')" 
+             alt="Paper">
 
-        alert(`You Picked Rock . Computer Picked ${ComputerMove}. ${result}`);
-         
-         
-      ">Paper</button>
-      <button onclick="
-         
-         pickComputerMove();
-         
-         let result = '';
-         if(ComputerMove==='Rock'){
-            result = 'Loose'
-         }else if(ComputerMove=='Paper'){
-            result='Win';
-         }else if(ComputerMove=='Scissors'){
-            result='Tie';
-         }
-
-        alert(`You Picked Rock . Computer Picked ${ComputerMove}. ${result}`);
-      ">Scissors</button>
+        <img src="images/scissors.jpg" 
+             class="move-img" 
+             onclick="playGame('scissors')" 
+             alt="Scissors">
+      </div>
 
       <script src="script.js"></script>
-
     </body>
 </html>

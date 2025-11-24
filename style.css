@@ -8,3 +8,17 @@ body{
             background-color: red;
             color: white;
         }
+.choices {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+.move-img{
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.move-img:hover {
+  transform: scale(1.15);
+}
