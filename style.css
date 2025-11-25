@@ -1,24 +1,34 @@
-body{
-            background-color: black;
-        }
-        h1{
-            background-color: yellow;
-        }
-        button{
-            background-color: red;
-            color: white;
-        }
-.choices {
-  display: flex;
-  gap: 30px;
-  margin-top: 20px;
+body {
+    background-color: black;
 }
-.move-img{
+
+h1 {
+    background-color: yellow;
+    border: 10px solid red; /* Fixed */
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: red;
+    color: white;
+}
+
+.choices {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.move-img {
     width: 120px;
     height: 120px;
     cursor: pointer;
     transition: transform 0.2s ease;
+    border-radius: 10px;
 }
+
 .move-img:hover {
-  transform: scale(1.15);
+    transform: scale(1.15);
 }
