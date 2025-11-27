@@ -1,5 +1,5 @@
-body {
-    background-color: black;
+body{
+    background-color: pink;
 }
 
 h1 {
@@ -19,6 +19,22 @@ button {
     gap: 30px;
     margin-top: 20px;
     justify-content: center;
+    /*border: 10px salmon solid;*/
+}
+.power{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 320px;
+    border-color: red;
+    border: 5px black solid;
+    border-radius: 100px;
+    background-color: chocolate;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.power:hover{
+    color: darkblue;
 }
 
 .move-img {

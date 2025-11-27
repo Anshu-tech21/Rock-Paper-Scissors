@@ -1,8 +1,10 @@
- const score = {
-  wins:0,
-  looses: 0,
-  ties: 0
- } 
+    const score = JSON.parse(localStorage.getItem
+     ('score')) || {
+      wins:0,
+      looses: 0,
+      ties: 0
+    }
+      updateScore();
 
         function playGame(playerMove){
           const ComputerMove= pickComputerMove();
@@ -37,9 +39,25 @@
             result='Win';
          }
          }
+
+         if(result === 'Win'){
+            score.wins += 1;
+         }else if(result === 'Loose'){
+            score.looses += 1;
+         }else if(result === 'Tie'){
+            score.ties += 1 ;
+         }
+         localStorage.setItem('score', JSON.stringify(score));
+
+          updateScore();
          
         alert(`You Picked ${playerMove} . Computer Picked ${ComputerMove} . ${result}`);
         }
+
+        function updateScore() {
+         document.querySelector('.js-score').innerHTML =
+           `Wins: ${score.wins}, Losses: ${score.looses}, Ties: ${score.ties}`;
+}
  
         function pickComputerMove(){
              const randomNumber = Math.random();

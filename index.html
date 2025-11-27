@@ -21,9 +21,21 @@
 
         <img src="images/scissors.jpg" 
              class="move-img" 
-             onclick="playGame('scissors')" 
+             onclick="playGame('Scissors')" 
              alt="Scissors">
       </div>
+      <p class="js-score"></p>
+      <button onclick="
+       score.wins = 0;
+       score.looses = 0;
+       score.ties = 0;
+       localStorage.removeItem('score'); 
+  updateScore();
+       ">Reset</button>
+
+       <div class="power" onclick="window.open('https://www.linkedin.com/in/anshu-tingre-88b705285/','_blank')">
+          <P><b>Powered By :- Anshu Tingre . </b></P>
+       </div>
 
       <script src="script.js"></script>
     </body>
